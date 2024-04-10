@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="bg-danger" style="background-color: #ffbb00; text-align: center; padding: 5px;">
+            <h1>COVID 19 QUIZ</h1>
+        </header>
+
+        <!-- Container includes the --Login in text and a login Modal -->
+        <div class="container">
+            <div id="login">
+                <p>Ready to play? Click Below:</p>
+                <!--Add a button and heading to get the login form (Modal)  -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                    Play Quiz
+                </button>
+            </div>
+            <!-- Add a login form (Modal) -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Login Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Join Quiz</h4>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Put your login contain here -->
+                            <form>
+                                <!-- USER NAME -->
+                                <div class="form-group">
+                                    <label for="username">Name:</label>
+                                    <input id="username" name="username" type="text" placeholder="Enter User Name"
+                                        class="form-control">
+                                    <span class="label label-default span">Please enter a user name</span>
+                                </div>
+
+                                <!--PASSWORD  -->
+                                <div class="form-control">
+                                    <label for="password">Password:</label>
+                                    <input id="password" name="password" type="password" class="form-control"
+                                        placeholder="Enter Password">
+                                    <span class="label label-default">Password must be 6 or more characters</span>
+                                </div>
+                                <!-- <br><br><br> not good-->
+                                <div>
+                                    <input type="submit" value="Register" id="submit" class="submitForm"
+                                        data-dismiss="modal" class="btn btn-primary" disabled="true"
+                                        style="background-color:purple; color: white;">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Login Form Ends Here -->
+
+        </div>
+        <!-- Login Form Ends Here -->
+
+        <div id="quiz">
+            <div class="container">
+                <!-- Add quiz questions in the form below -->
+                <form action=""></form>
+            </div>
+        </div>
+        <!-- Quiz Questions Ends Here -->
+
+        <!-- Add a Modal for alert messages and Output -->
+        <!-- Add the JavaScript file sources -->
+    </main>
+
+</body>
+
+</html>
