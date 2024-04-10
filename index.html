@@ -15,11 +15,6 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Link questions.js -->
-    <script src="/questions.js"></script>
-
-    <!-- Link login.js -->
-    <script src="/login.js"></script>
 </head>
 
 <body>
@@ -116,30 +111,30 @@
                             <input type="radio" name="op1" value="Agree" id=""> Agree <br>
                             <input type="radio" name="op1" value="Strongly Agree" id=""> Strongly Agree <br><br>
                             <p>2. Getting vaccinated and boosted is the best way to protect yourself and others.</p>
-                            <input type="radio" name="op1" value="Strongly Disagree" id=""> Strongly Disagree <br>
-                            <input type="radio" name="op1" value="Disagree" id=""> Disagree <br>
-                            <input type="radio" name="op1" value="Neutral" id=""> Neutral <br>
-                            <input type="radio" name="op1" value="Agree" id=""> Agree <br>
-                            <input type="radio" name="op1" value="Strongly Agree" id=""> Strongly Agree <br><br>
+                            <input type="radio" name="op2" value="Strongly Disagree" id=""> Strongly Disagree <br>
+                            <input type="radio" name="op2" value="Disagree" id=""> Disagree <br>
+                            <input type="radio" name="op2" value="Neutral" id=""> Neutral <br>
+                            <input type="radio" name="op2" value="Agree" id=""> Agree <br>
+                            <input type="radio" name="op2" value="Strongly Agree" id=""> Strongly Agree <br><br>
                             <p>3. The best way to stop the spread of COVID-19 is to isolate at the first sign of
                                 symptoms</p>
-                            <input type="radio" name="op1" value="Strongly Disagree" id=""> Strongly Disagree <br>
-                            <input type="radio" name="op1" value="Disagree" id=""> Disagree <br>
-                            <input type="radio" name="op1" value="Neutral" id=""> Neutral <br>
-                            <input type="radio" name="op1" value="Agree" id=""> Agree <br>
-                            <input type="radio" name="op1" value="Strongly Agree" id=""> Strongly Agree <br><br>
+                            <input type="radio" name="op3" value="Strongly Disagree" id=""> Strongly Disagree <br>
+                            <input type="radio" name="op3" value="Disagree" id=""> Disagree <br>
+                            <input type="radio" name="op3" value="Neutral" id=""> Neutral <br>
+                            <input type="radio" name="op3" value="Agree" id=""> Agree <br>
+                            <input type="radio" name="op3" value="Strongly Agree" id=""> Strongly Agree <br><br>
                             <p>4. You have to plan ahead and exercise caution if you intend to travel.</p>
-                            <input type="radio" name="op1" value="Strongly Disagree" id=""> Strongly Disagree <br>
-                            <input type="radio" name="op1" value="Disagree" id=""> Disagree <br>
-                            <input type="radio" name="op1" value="Neutral" id=""> Neutral <br>
-                            <input type="radio" name="op1" value="Agree" id=""> Agree <br>
-                            <input type="radio" name="op1" value="Strongly Agree" id=""> Strongly Agree <br><br>
+                            <input type="radio" name="op4" value="Strongly Disagree" id=""> Strongly Disagree <br>
+                            <input type="radio" name="op4" value="Disagree" id=""> Disagree <br>
+                            <input type="radio" name="op4" value="Neutral" id=""> Neutral <br>
+                            <input type="radio" name="op4" value="Agree" id=""> Agree <br>
+                            <input type="radio" name="op4" value="Strongly Agree" id=""> Strongly Agree <br><br>
                             <p>5. Most accurate COVID test will be on day 5 after exposure.</p>
-                            <input type="radio" name="op1" value="Strongly Disagree" id=""> Strongly Disagree <br>
-                            <input type="radio" name="op1" value="Disagree" id=""> Disagree <br>
-                            <input type="radio" name="op1" value="Neutral" id=""> Neutral <br>
-                            <input type="radio" name="op1" value="Agree" id=""> Agree <br>
-                            <input type="radio" name="op1" value="Strongly Agree" id=""> Strongly Agree <br><br>
+                            <input type="radio" name="op5" value="Strongly Disagree" id=""> Strongly Disagree <br>
+                            <input type="radio" name="op5" value="Disagree" id=""> Disagree <br>
+                            <input type="radio" name="op5" value="Neutral" id=""> Neutral <br>
+                            <input type="radio" name="op5" value="Agree" id=""> Agree <br>
+                            <input type="radio" name="op5" value="Strongly Agree" id=""> Strongly Agree <br><br>
                             <!-- Button-Get Your Score -->
                             <button type="button" style="background-color: #ffbb00; color: black; border-radius: 10px;"
                                 class="btn btn-success" data-toggle="modal" data-target="#modalOutput"
@@ -165,7 +160,8 @@
                         <div class="modal-body">
                             <p id="message"></p>
                             <p id="result"></p>
-                            <p id="img"></p>
+                            <img id="img" src="" alt="">
+                            <!-- <p id="img"></p> -->
                         </div>
 
                         <!-- Quiz-modal Footer -->
@@ -184,6 +180,7 @@
 
         <!-- 4. Link questions.js -->
         <script src="/questions.js"></script>
+
     </main>
 </body>
 
