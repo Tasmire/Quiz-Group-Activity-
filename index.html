@@ -35,7 +35,7 @@
                     Play Quiz
                 </button>
             </div>
-            <!-- Login-welcome Ends Here -->
+            <!-- 2.1 Login-welcome Ends Here -->
 
             <!-- 2.2 Login-modal -->
             <div class="modal fade" id="myModal" role="dialog">
@@ -44,16 +44,16 @@
                     <!-- Login-modal Content -->
                     <div class="modal-content">
 
-                        <!-- Modal Header -->
+                        <!-- Login-modal Header -->
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">Join Quiz</h4>
                         </div>
 
-                        <!-- Modal Body -->
+                        <!-- Login-modal Body -->
                         <div class="modal-body">
-                            <!-- Put your login contain here -->
                             <form>
+
                                 <!-- User Name -->
                                 <div class="form-group">
                                     <label for="username">Name:</label>
@@ -74,17 +74,19 @@
                                 <input type="submit" value="Register" id="submit" class="submitForm"
                                     data-dismiss="modal" class="btn btn-primary" disabled="true"
                                     style="background-color:purple; color: white;">
+
                             </form>
                         </div>
 
-                        <!-- Modal Footer -->
+                        <!-- Login-modal Footer -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
+
                     </div>
                 </div>
             </div>
-            <!-- Login-modal Ends Here -->
+            <!-- 2.2 Login-modal Ends Here -->
 
             <!-- 2.3 Quiz-question -->
             <div id="quiz">
@@ -104,18 +106,21 @@
                     <div class="col-sm-12"
                         style="background-color: purple; color: white; padding: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 16px; line-height: 30px;">
                         <form action="" id="form1" name="form1">
+
                             <p>1. The Omicron variant spreads easier than the original COVID-19 virus</p>
                             <input type="radio" name="op1" value="Strongly Disagree" id=""> Strongly Disagree <br>
                             <input type="radio" name="op1" value="Disagree" id=""> Disagree <br>
                             <input type="radio" name="op1" value="Neutral" id=""> Neutral <br>
                             <input type="radio" name="op1" value="Agree" id=""> Agree <br>
                             <input type="radio" name="op1" value="Strongly Agree" id=""> Strongly Agree <br><br>
+
                             <p>2. Getting vaccinated and boosted is the best way to protect yourself and others.</p>
                             <input type="radio" name="op2" value="Strongly Disagree" id=""> Strongly Disagree <br>
                             <input type="radio" name="op2" value="Disagree" id=""> Disagree <br>
                             <input type="radio" name="op2" value="Neutral" id=""> Neutral <br>
                             <input type="radio" name="op2" value="Agree" id=""> Agree <br>
                             <input type="radio" name="op2" value="Strongly Agree" id=""> Strongly Agree <br><br>
+
                             <p>3. The best way to stop the spread of COVID-19 is to isolate at the first sign of
                                 symptoms</p>
                             <input type="radio" name="op3" value="Strongly Disagree" id=""> Strongly Disagree <br>
@@ -123,27 +128,31 @@
                             <input type="radio" name="op3" value="Neutral" id=""> Neutral <br>
                             <input type="radio" name="op3" value="Agree" id=""> Agree <br>
                             <input type="radio" name="op3" value="Strongly Agree" id=""> Strongly Agree <br><br>
+
                             <p>4. You have to plan ahead and exercise caution if you intend to travel.</p>
                             <input type="radio" name="op4" value="Strongly Disagree" id=""> Strongly Disagree <br>
                             <input type="radio" name="op4" value="Disagree" id=""> Disagree <br>
                             <input type="radio" name="op4" value="Neutral" id=""> Neutral <br>
                             <input type="radio" name="op4" value="Agree" id=""> Agree <br>
                             <input type="radio" name="op4" value="Strongly Agree" id=""> Strongly Agree <br><br>
+
                             <p>5. Most accurate COVID test will be on day 5 after exposure.</p>
                             <input type="radio" name="op5" value="Strongly Disagree" id=""> Strongly Disagree <br>
                             <input type="radio" name="op5" value="Disagree" id=""> Disagree <br>
                             <input type="radio" name="op5" value="Neutral" id=""> Neutral <br>
                             <input type="radio" name="op5" value="Agree" id=""> Agree <br>
                             <input type="radio" name="op5" value="Strongly Agree" id=""> Strongly Agree <br><br>
+
                             <!-- Button-Get Your Score -->
                             <button type="button" style="background-color: #ffbb00; color: black; border-radius: 10px;"
                                 class="btn btn-success" data-toggle="modal" data-target="#modalOutput"
                                 onclick="calculateScore();">Get Your Score</button>
+
                         </form>
                     </div>
                 </div>
             </div>
-            <!-- Quiz-questions Ends Here -->
+            <!-- 2.3 Quiz-questions Ends Here -->
 
             <!-- 2.4 Quiz-modal -->
             <div class="modal fade" id="modalOutput" role="dialog">
@@ -171,42 +180,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Quiz-modal Ends Here -->
-
-
-
-            <!-- <div class="modal fade" id="modalOutput" role="dialog">
-                <div class="modal-dialog">
-                   
-                    <div id="submit" class="modal-content">
-
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Outcome</h4>
-                        </div>
-
-                        <div class="modal-body">
-                            <p id="message"></p>
-                            <p id="result"></p>
-                            <img id="img"></p>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-
+            <!-- 2.4 Quiz-modal Ends Here -->
 
         </div>
-
-
-
-
-
-
 
         <!-- 3. Link login.js -->
         <script src="/login.js"></script>
