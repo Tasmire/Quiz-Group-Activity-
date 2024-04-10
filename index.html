@@ -24,15 +24,15 @@
 
 <body>
     <main>
-        <!-- 1.1 Header -->
+        <!-- 1 Banner -->
         <header class="bg-danger" style="background-color: #ffbb00; text-align: center; padding: 5px;">
             <h1>COVID 19 QUIZ</h1>
         </header>
 
-        <!-- 1.2 Container includes the --Login in text and a login Modal -->
+        <!-- 2 Body -->
         <div class="container">
 
-            <!--1.2.1 Add a heading and a button to get the login form (Modal)  -->
+            <!--2.1 Login-welcome  -->
             <div id="login">
                 <h2 style="color: purple;">Ready to play? Click Below:</h2>
                 <button type="button" class="btn btn-info btn-lg" style="background-color: purple;" data-toggle="modal"
@@ -40,12 +40,13 @@
                     Play Quiz
                 </button>
             </div>
+            <!-- Login-welcome Ends Here -->
 
-            <!-- 1.2.2 Add a login form (Modal) -->
+            <!-- 2.2 Login-modal -->
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
 
-                    <!-- Login Modal content -->
+                    <!-- Login-modal Content -->
                     <div class="modal-content">
 
                         <!-- Modal Header -->
@@ -58,7 +59,7 @@
                         <div class="modal-body">
                             <!-- Put your login contain here -->
                             <form>
-                                <!-- USER NAME -->
+                                <!-- User Name -->
                                 <div class="form-group">
                                     <label for="username">Name:</label>
                                     <input id="username" name="username" type="text" placeholder="Enter User Name"
@@ -66,7 +67,7 @@
                                     <span class="label label-default span">Please enter a user name</span>
                                 </div>
 
-                                <!--PASSWORD  -->
+                                <!--Password  -->
                                 <div class="form-group">
                                     <label for="password">Password:</label>
                                     <input id="password" name="password" type="password" class="form-control"
@@ -78,39 +79,57 @@
                                 <input type="submit" value="Register" id="submit" class="submitForm"
                                     data-dismiss="modal" class="btn btn-primary" disabled="true"
                                     style="background-color:purple; color: white;">
-
                             </form>
                         </div>
 
                         <!-- Modal Footer -->
-                        <!-- <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div> -->
-
-
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
-
                     </div>
                 </div>
             </div>
-            <!-- Login Form Ends Here -->
+            <!-- Login-modal Ends Here -->
 
-        </div>
-        <!-- Login Form Ends Here -->
+            <!-- 2.3 Quiz-question -->
+            <div id="quiz">
 
-        <!-- 1.3 Quiz -->
-        <div id="quiz">
-            <div class="container">
-                <!-- Add quiz questions in the form below -->
-                <form action=""></form>
+                <!-- Quiz-questions Content -->
+                <div class="container">
+
+                    <!-- Quiz-questions Title -->
+                    <div class="col-sm-12"
+                        style="background-color: white; color: purple; text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                        <h1>
+                            COVID 19 Quiz Questions
+                        </h1>
+                    </div>
+
+                    <!-- Quiz-questions List -->
+                    <div>
+                        <form action="">
+                            <p>1. The Omicron variant spreads easier than the original COVID-19 virus</p>
+                            <input type="radio" name="op1" value="Strongly Disagree" id=""> Strongly Disagree <br>
+                            <input type="radio" name="op1" value="Disagree" id=""> Disagree <br>
+                            <input type="radio" name="op1" value="Neutral" id=""> Neutral <br>
+                            <input type="radio" name="op1" value="Agree" id=""> Agree <br>
+                            <input type="radio" name="op1" value="Strongly Agree" id=""> Strongly Agree <br>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Quiz Questions Ends Here -->
+            <!-- Quiz-questions Ends Here -->
 
-        <!-- Add a Modal for alert messages and Output -->
-        <!-- Add the JavaScript file sources -->
+            <!-- 2.4 Quiz-modal -->
+            <div>
+
+            </div>
+            <!-- Quiz-modal Ends Here -->
+        </div>
     </main>
 
 </body>
